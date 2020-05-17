@@ -21,7 +21,10 @@ Non-Functional Requirements:
 - Avoid race condition.
 
 High-Level Design
-![alt_text](repository_image/bus-reservation.png?raw=true "Title")
+![alt_text](repository_image/bus-reservation.png?raw=true "High-Level Design")
+
+ER Diagram
+![alt_text](repository_image/db-diagarm.png?raw=true "ER Diagram")
 
 ##Configuration
 ```
@@ -83,9 +86,10 @@ example: /api/trip/seats?origin=1&destination=8&available=1
         "seats": array
     ]
 }
+```
 
 ####Book Seat:
-```http
+```
 POST /api/reservation
 ```
 | Parameter | Type | Description |
